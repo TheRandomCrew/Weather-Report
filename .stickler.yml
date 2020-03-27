@@ -1,0 +1,8 @@
+linters:
+  eslint:
+    config: './.eslintrc.json'
+files:
+  ignore:
+      - 'docs/*'
+      - 'webpack.dev.js'
+      - 'webpack.prod.js'
