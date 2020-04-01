@@ -1,52 +1,58 @@
 import layout from './layout';
+import weatherAPI from './service';
 
-const tabs = (() => {
-  const tabs = ['Home', 'Menu', 'Contact'];
-  let current = 'Home';
+const weather = (() => {
+  this.data = {};
 
   const init = () => {
     try {
-      layout();
+      const res = weatherAPI().getData();
+      this.data = res;
       return {
-        ok: 'Tabs generated!',
+        ok: true,
+        data: this.data,
       };
     } catch (error) {
-      return { error: error.message };
+      console.error(error);
+      return { ok: false, error: error.message };
     }
   };
 
-  const change = (tab = '') => {
+  const search = (cityId) => {
     try {
-      if (typeof tab !== 'string') throw new TypeError('Tab must be string');
-      if (!tabs.includes(tab)) throw new RangeError('Tab incorrect. Must be Home | Menu | Contact');
-      if (tab === current) throw new Error('Its the same tab');
-      layout(tab);
-      current = tab;
+      if (typeof tab !== 'number') throw new TypeError('City ID must be number');
+
+      const res = weatherAPI().getData(cityId);
+      this.data = res;
       return {
-        ok: 'Tab Changed!',
+        ok: true,
+        data: this.data,
       };
     } catch (error) {
-      return { error: error.message };
+      console.error(error);
+      return { ok: false, error: error.message };
     }
   };
 
-  const buttonEvent = (button = 'Home') => {
+  const buttonEvent = () => {
     try {
-      document.getElementById(button.toLowerCase()).addEventListener('click', () => {
-        const main = document.getElementById('main');
-        if (main.hasChildNodes()) {
-          document.getElementById('content').removeChild(main);
+      document.getElementById('search-button').addEventListener('click', () => {
+        const cityId = document.getElementById('city-id');
+        if (cityId.value) {
+          const { ok, error, data } = search(cityId.value);
+          if (ok) {
+            layout(data);
+          }
+          throw new Error(error);
         }
-        change(button);
-        ['Home', 'Menu', 'Contact'].forEach(item => {
-          if (item !== button) buttonEvent(item);
-        });
+        throw new Error('Choose a city from the list!');
       });
       return {
-        ok: `Tab Changed with button! ${button}`,
+        ok: true,
       };
     } catch (error) {
-      return { error: error.message };
+      console.log(error.message);
+      return { ok: false, error: error.message };
     }
   };
 
@@ -56,4 +62,4 @@ const tabs = (() => {
   };
 })();
 
-export default tabs;
+export default weather;

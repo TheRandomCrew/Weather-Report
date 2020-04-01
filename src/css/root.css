@@ -1,0 +1,43 @@
+:root {
+  --darkgray: #333333;
+  --yellow: #ead975;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+.title {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #d0e4f7;
+  background: -moz-linear-gradient(
+    -45deg,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #d0e4f7 0%,
+    #73b1e7 24%,
+    #0a77d5 50%,
+    #539fe1 79%,
+    #87bcea 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
+}

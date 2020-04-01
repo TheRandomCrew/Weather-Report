@@ -26,6 +26,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
+              filename: 'styles.css',
               hmr: process.env.NODE_ENV === 'development',
               reloadAll: true,
             },
@@ -51,7 +52,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/view/index.html',
+      template: './src/index.html',
       inject: false,
       chunks: ['index'],
       filename: 'index.html',

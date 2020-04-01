@@ -1,0 +1,45 @@
+.grid-container {
+  height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas: "place date humidity" "temperatures temperatures cloudiness" "moreInfo moreInfo moreInfo";
+  }
+  
+  .humidity {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "humidityIcon humidityNumber";
+    grid-area: humidity;
+  }
+  
+  .humidityIcon { grid-area: humidityIcon; }
+  
+  .humidityNumber { grid-area: humidityNumber; }
+  
+  .date {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "dayName" "dayName";
+    grid-area: date;
+  }
+  
+  .dayName { grid-area: dayName; }
+  
+  .place {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "city" "city";
+    grid-area: place;
+  }
+  
+  .city { grid-area: city; }
+  
+  .temperatures { grid-area: temperatures; }
+  
+  .cloudiness { grid-area: cloudiness; }
+  
+  .moreInfo { grid-area: moreInfo; }
