@@ -1,16 +1,12 @@
 .grid-container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1.5fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr auto;
   grid-template-areas: 'place date humidity' 'temperatures temperatures cloudiness' 'moreInfo moreInfo moreInfo';
 }
 
 .humidity {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'humidityIcon humidityNumber';
   grid-area: humidity;
 }
 
@@ -23,10 +19,6 @@
 }
 
 .date {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'dayName' 'dayName';
   grid-area: date;
 }
 
@@ -35,10 +27,6 @@
 }
 
 .place {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: 'city' 'city';
   grid-area: place;
 }
 
