@@ -1,19 +1,21 @@
-import './main.css';
-import './css/root.css';
-import './css/layout.css';
-import './css/weather.css';
-import './css/search.css';
-// import weather from './js/service';
-import autocomplete from './js/autocomplete';
+import './js/loaders';
+import weather from './js/service';
+import layout from './js/layout';
 
+const loader = document.getElementById('loading');
 // window.addEventListener('DOMContentLoaded', async () => {
 // });
 
 window.addEventListener('load', async () => {
-  // const data = await weather().getData();
-  // console.log(data);
-  const searchInput = document.getElementById('search-input');
-  autocomplete(searchInput);
+  const data = await weather().getData();
+  console.log(data);
+  if (data) {
+    const res = await layout(data);
+    if (!res) {
+      console.error('Layout problem')
+    }
+    loader.setAttribute('style', 'display: none; !important');
+  }
 });
 
 document.getElementById('search-button').addEventListener('click', async e => {

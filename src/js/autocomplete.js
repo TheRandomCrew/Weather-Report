@@ -16,7 +16,7 @@ function autocomplete(inp) {
     }
   }
 
-  inp.addEventListener('input', function () {
+  inp.addEventListener('input', function action() {
     const val = this.value;
     /* close any already open lists of autocompleted values */
     closeAllLists();
@@ -45,7 +45,7 @@ function autocomplete(inp) {
         /* insert a input field that will hold the current array item's value: */
         b.innerHTML += `<input type='hidden' value='${cities[i].name}, ${cities[i].country}' data=${cities[i].id}>`;
         /* execute a function when someone clicks on the item value (DIV element): */
-        b.addEventListener('click', function () {
+        b.addEventListener('click', function action() {
           /* insert the value for the autocomplete text field: */
           inp.value = this.getElementsByTagName('input')[0].value;
           inp.setAttribute(
@@ -82,7 +82,7 @@ function autocomplete(inp) {
   }
 
   /* execute a function presses a key on the keyboard: */
-  inp.addEventListener('keydown', function (e) {
+  inp.addEventListener('keydown', function action(e) {
     let x = document.getElementById(`${this.id}autocomplete-list`);
     if (x) x = x.getElementsByTagName('div');
     if (e.keyCode === 40) {

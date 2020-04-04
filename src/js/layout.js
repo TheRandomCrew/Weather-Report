@@ -1,13 +1,19 @@
-// import { home, menu, contact } from './template';
+import weatherLayout from './template';
 
-const layout = (cityId) => {
-  if (typeof cityId !== 'number') throw new TypeError('City ID Provided is invalid!');
-  // const main = document.createElement('main');
-  // main.setAttribute('id', 'main');
-  // if (currentTab === 'Home') main.innerHTML = home();
-  // if (currentTab === 'Menu') main.innerHTML = menu();
-  // if (currentTab === 'Contact') main.innerHTML = contact();
-  // document.getElementById('content').appendChild(main);
+const layout = (data) => {
+  try {
+    if (typeof data !== 'object') throw new TypeError('Data Provided is invalid!');
+    const main = document.createElement('div');
+    main.setAttribute('id', 'main');
+    main.classList.add('grid-container');
+    main.innerHTML = weatherLayout(data);
+    document.getElementById('page-body').appendChild(main);
+    return true;
+  } catch (error) {
+    console.error(error)
+    return false;
+  }
+
 };
 
 export default layout;

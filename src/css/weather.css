@@ -1,9 +1,9 @@
 .grid-container {
   height: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 1.5fr auto;
-  grid-template-areas: 'place date humidity' 'temperatures temperatures cloudiness' 'moreInfo moreInfo moreInfo';
+  grid-template-areas: 'place humidity date' 'sky temperatures temperatures' 'moreInfo moreInfo moreInfo';
 }
 
 .humidity {
@@ -20,6 +20,8 @@
 
 .date {
   grid-area: date;
+  vertical-align: bottom;
+  color: var(--lightblue);
 }
 
 .dayName {
@@ -32,19 +34,36 @@
 
 .city {
   color: var(--darkblue);
-  font-size: 100px;
+  font-size: 3.5vw;
   font-weight: 900;
   grid-area: city;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.country {
+  color: var(--lightblue);
+  font-size: xx-large;
+  font-weight: 400;
 }
 
 .temperatures {
-  color: var(--darkerblue);
-  font-size: 100px;
-  font-weight: 900;
+  color: var(--orange);
   grid-area: temperatures;
 }
 
-.cloudiness {
+.temperatures span {
+  color: var(--darkerblue);
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.temperatures b {
+  color: var(--lightblue);
+  font-size: 50px;
+}
+
+.sky {
   grid-area: cloudiness;
 }
 
