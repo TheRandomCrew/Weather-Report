@@ -21,8 +21,8 @@ module.exports = merge(webpackBaseConfig, {
     sideEffects: true,
     usedExports: true,
     splitChunks: {
-      chunks: 'all',
-      hidePathInfo: true,
+      chunks: 'async',
+      hidePathInfo: false,
       minSize: 3000,
       maxAsyncRequests: 5,
       maxInitialRequests: 3,

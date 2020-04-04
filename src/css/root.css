@@ -7,8 +7,19 @@
 }
 
 .title {
+  color: var(--orange);
   font-family: serif;
   font-style: italic;
+}
+
+.value {
+  color: var(--darkerblue);
+  font-size: 4vw;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 body {

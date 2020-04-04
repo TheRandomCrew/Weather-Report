@@ -13,7 +13,6 @@ const weather = (() => {
         data: this.data,
       };
     } catch (error) {
-      console.error(error);
       return { ok: false, error: error.message };
     }
   };
@@ -29,7 +28,6 @@ const weather = (() => {
         data: this.data,
       };
     } catch (error) {
-      console.error(error);
       return { ok: false, error: error.message };
     }
   };
@@ -51,7 +49,6 @@ const weather = (() => {
         ok: true,
       };
     } catch (error) {
-      console.log(error.message);
       return { ok: false, error: error.message };
     }
   };

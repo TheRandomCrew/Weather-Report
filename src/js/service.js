@@ -14,7 +14,7 @@ const useFetch = async (url) => {
 
 function weatherAPI() {
   let data = {};
-  let current = 4119617;
+  let current = 3686540;
 
   const setData = async (cityId = current) => {
     const apiKey = 'eb504485b53831c5ccf317ca5d440582';
@@ -24,8 +24,8 @@ function weatherAPI() {
       main: res.weather[0].main,
       description: res.weather[0].description,
       icon: `http://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`,
-      date: Date(res.dt),
-      hour: Date(res.dt).toString().split(' ')[4].split(':')[0] % 12,
+      date: new Date(res.dt * 1000),
+      hour: (new Date(res.dt * 100)).getHours() % 12,
       clouds: `${res.clouds.all}%`,
       rain: res.rain ? `${res.rain['1h']} mm` : '<i class="wi wi-na"></i>',
       humidity: `${res.main.humidity}%`,
@@ -38,9 +38,10 @@ function weatherAPI() {
         feels_like: res.main.feels_like,
         temp: res.main.temp,
       },
-      sunrise: Date(res.sys.sunrise),
-      sunset: Date(res.sys.sunset),
+      sunrise: new Date(res.sys.sunrise * 1000),
+      sunset: new Date(res.sys.sunset * 1000),
       city: res.name,
+      country: res.sys.country,
     };
     current = cityId;
     return data;

@@ -1,8 +1,8 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const buildPath = path.resolve(__dirname, '../dist/')
+const buildPath = path.resolve(__dirname, '../dist/');
 
 module.exports = {
   entry: {
@@ -47,7 +47,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               name: '[name].[ext]',
-              esModule: false,
+              esModule: true,
               limit: 8192,
             },
           },
@@ -77,11 +77,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      inject: false,
+      inject: true,
       chunks: ['index'],
       filename: 'index.html',
       favicon: 'src/favicon.ico',
     }),
     new MiniCssExtractPlugin({ filename: '[name].css' }),
   ],
-}
+};

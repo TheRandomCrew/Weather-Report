@@ -28,7 +28,7 @@
   </p>
 </p>
 
-[![Home](docs/home.png)](http://plaza-athenee.surge.sh/)
+[![Home](docs/home.png)](http://weather_report.surge.sh/)
 
 # The Project
 
@@ -77,10 +77,11 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Live Demo
 
-[![Home](docs/home.png)](http://plaza-athenee.surge.sh/)
+[![Home](docs/home.png)](http://weather_report.surge.sh/)
 
-![Menu](docs/menu.png)
-![Contact](docs/contact.png)
+### Try the autocomplete feature!
+
+![Menu](docs/autocomplete.png)
 
 ## Prerequisites
 
@@ -102,7 +103,7 @@ Then open [http://localhost:3000/](http://localhost:3000/) to see the app.
 ### Where are generated files?
 
 In `development` mode `webpack` does not write generated files to disk, in order to change it
-switch `devServer.writeToDisk` to `true` in [webpack.dev.js](./webpack.dev.js). The generated files are
+switch `devServer.writeToDisk` to `true` in [webpack.dev.js](./webpack.common.config.js). The generated files are
 on `dist/` folder.
 
 ### Run development build
@@ -135,7 +136,8 @@ Give a ⭐️ if you like this project!
 - [Microverse](https://www.microverse.org/)
 - [The Odin Project](https://www.theodinproject.com/)
 - [Readme header author](https://github.com/collinsugwu/Microverse201-Enumerable-Methods)
-- Unsplash images
+- [FlatIcon](https://www.flaticon.com/) images
+- [OpenWeatherMap](https://openweathermap.org/) API
 
 # 📝 License
 
