@@ -20,7 +20,7 @@
     Dynamically rendering a simple weather homepage using async JS
     <br />
 	  🖊️
-    <a href="https://www.theodinproject.com/courses/javascript/lessons/restaurant-page">Assignment</a>
+    <a href="https://www.theodinproject.com/courses/javascript/lessons/weather-app">Assignment</a>
     🐞
     <a href="https://github.com/Israel-Laguan/Weather-Report/issues">Report a Bug</a>
     🙋‍♂️
@@ -51,10 +51,10 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 - Basic VanillaJS app with a single script or few commands
 - JS modules and ES6+ available for most browsers
+- connected an API using `async/await`
 - Sets `stickler` on the repo
 - Sets `eslint` rules
 - Tests made with [`ESLint`](https://eslint.org/)
-- Unit Testing with [`Jest`](https://jestjs.io/)
 - Add `jest` and `eslint` to be callable with `npm`
 
 
