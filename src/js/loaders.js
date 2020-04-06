@@ -7,4 +7,4 @@ import '../css/temperatureMetric.css';
 import '../css/weather-icons.min.css';
 import '../css/weather-icons-wind.min.css';
 import '../favicon.ico';
-import 'regenerator-runtime/runtime';
+import 'regenerator-runtime/runtime';// eslint-disable-line
