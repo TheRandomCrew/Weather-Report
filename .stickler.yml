@@ -4,5 +4,6 @@ linters:
 files:
   ignore:
       - 'docs/*'
-      - 'webpack.dev.js'
-      - 'webpack.prod.js'
+      - 'config/*'
+      - 'dist/*'
+      - '.babelrc.js'
