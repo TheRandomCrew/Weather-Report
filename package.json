@@ -36,6 +36,7 @@
     "url": "git+https://github.com/Israel-Laguan/Weather-Report.git"
   },
   "keywords": [
+    "async",
     "javascript",
     "js",
     "app",
@@ -45,7 +46,7 @@
     "Jest"
   ],
   "author": "Israel Laguan",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Israel-Laguan/Weather-Report/issues"
   },

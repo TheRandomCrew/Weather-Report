@@ -19,10 +19,16 @@ document.getElementById('search-button').addEventListener('click', async e => {
   e.preventDefault();
   const input = document.getElementById('search-input');
   const cityId = input.getAttribute('data');
-  if (!input.hasAttribute('data')) return;
+  if (!input.hasAttribute('data')) {
+    const main = document.createElement('div');
+    main.setAttribute('style', 'color: red;');
+    main.innerText = 'Please select one location from the list!';
+    document.getElementById('page-body').appendChild(main);
+    return loader.setAttribute('style', 'display: none; !important');
+  }
   const data = await weather().getData(cityId);
   await layout(data);
   input.value = '';
   input.removeAttribute('data');
-  loader.setAttribute('style', 'display: none; !important');
+  return loader.setAttribute('style', 'display: none; !important');
 });
