@@ -1,0 +1,46 @@
+#content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  min-height: 50vh;
+  grid-template-rows: 100px auto;
+  background: var(--lightgray);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.page-header, .page-body {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .global-header ul {
+    margin-left: 0;
+  }
+}

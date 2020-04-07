@@ -1,0 +1,9 @@
+linters:
+  eslint:
+    config: './.eslintrc.json'
+files:
+  ignore:
+      - 'docs/*'
+      - 'config/*'
+      - 'dist/*'
+      - '.babelrc.js'
