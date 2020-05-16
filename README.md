@@ -4,14 +4,13 @@
 [![Issues-open][issues-open-shield]][issues-url]
 [![Issues-closed][issues-closed-shield]][issues-url]
 [![Contributors][contributors-shield]][contributors-url]
-[![Framework][badge-framework]][framework-url]
 [![contributions welcome][contributions-welcome]][issues-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://openweathermap.org/">
-    Powered by <img src="https://brands.home-assistant.io/_/openweathermap/logo.png" alt="Logo" height="80">
+    <img src="https://brands.home-assistant.io/_/openweathermap/logo.png" alt="Logo" height="80">
   </a>
 
   <h1 align="center">
@@ -34,7 +33,7 @@
 
 # The Project
 
-Your city's weather info, one click away, is just awaiting for you!
+Your city's weather info, one click away, is just awaiting for you! Powered by [OpenWeather API][openweather].
 
 For Microverse based in these [requirements](https://www.theodinproject.com/courses/javascript/lessons/weather-app).
 
@@ -50,6 +49,10 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 - Linters
 
 # Features
+
+[![Framework][badge-framework]][framework-url]
+![javascript][]
+![eslint][]
 
 - Basic VanillaJS app with a single script or few commands
 - JS modules and ES6+ available for most browsers
@@ -204,7 +207,10 @@ Feel free to fork this project and improve it
 [issues-open-shield]: https://img.shields.io/github/issues/Israel-Laguan/Weather-Report?style=for-the-badge
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/Israel-Laguan/Weather-Report?style=for-the-badge
 [issues-url]: https://github.com/Israel-Laguan/Weather-Report/issues
-[badge-framework]: https://img.shields.io/badge/webpack-v4-9cf?style=for-the-badge
+[badge-framework]: https://img.shields.io/badge/webpack-v4-9cf?style=for-the-badge&logo=webpack
 [framework-url]: https://webpack.js.org/
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
+[javascript]: https://img.shields.io/badge/JAVASCRIPT-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript
+[eslint]: https://img.shields.io/badge/linter-ESLint-4B32C3?style=for-the-badge&logo=eslint
+[openweather]: https://openweathermap.org/
