@@ -1,0 +1,69 @@
+.app {
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card::after {
+  content: '';
+  grid-column: 1 / 11;
+  grid-row: 1 / 2;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.info {
+  grid-area: 1 / 1 / 2 / 8;
+  z-index: 2;
+}
+
+.sidebar {
+  grid-area: 1 / 8 / 2 / 11;
+  z-index: 2;
+  color: #fff;
+}
+
+/* WEATHER TYPES */
+.clear-sky-day {
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/06/22/55/sun-3588618_960_720.jpg');
+}
+
+.clear-sky-night {
+  background-image: url('https://pixabay.com/get/g6c7f564c8e293fc9dd0ce979db1f814bc86e53258d5a4639f3f41ed09f9ddf9160e5edf232906ff2afccec5b981f093170fd47304a61605ac2a9509f07cb82affe53d0c73a3bf62f05fa908ae086d3cf_1920.jpg');
+}
+
+.clouds-day {
+  background-image: url('https://pixabay.com/get/g3e0f5a0d56fcc5541adb85127f6d5a2f97964c5c8afa6c03ed465219207273c4bc22b2016a72f86053bb4f3413e6f0d6015be47be7f78d5f59b4bd8ffb83f5a36477001e8fa07889cb6c714a74480140_1920.jpg');
+}
+
+.clouds-night {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/13/12/cloudy-1869753_960_720.jpg');
+}
+
+.rain {
+  background-image: url('https://cdn.pixabay.com/photo/2020/05/08/11/44/rain-5145277_960_720.jpg');
+}
+
+.thunderstorm {
+  background-image: url('https://cdn.pixabay.com/photo/2020/04/13/16/39/flash-5039182_960_720.jpg');
+}
+
+.snow {
+  background-image: url('https://cdn.pixabay.com/photo/2014/02/07/10/19/winter-260817_960_720.jpg');
+}
+
+.mist {
+  background-image: url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201_960_720.jpg');
+}

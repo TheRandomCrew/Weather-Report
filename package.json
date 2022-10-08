@@ -1,81 +1,25 @@
 {
   "name": "weather-report",
-  "version": "1.0.0",
-  "description": "Your city's weather info, one click away, is just awaiting for you!",
-  "directories": {
-    "docs": "docs"
-  },
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
-    "watch": "NODE_ENV=development webpack",
-    "build": "NODE_ENV=production webpack",
-    "test": "jest --coverage -w =100%",
-    "lint": "eslint src/ --cache -f table",
-    "lint-fix": "eslint src/ --fix",
-    "deploy": "surge ./dist weather_report.surge.sh"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Israel-Laguan/Weather-Report.git"
-  },
-  "keywords": [
-    "async",
-    "javascript",
-    "js",
-    "app",
-    "eslint",
-    "ES6",
-    "Test",
-    "Jest"
-  ],
-  "author": "Israel Laguan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Israel-Laguan/Weather-Report/issues"
-  },
-  "homepage": "https://github.com/Israel-Laguan/Weather-Report#readme",
   "dependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.0.2",
-    "html-webpack-template": "^6.2.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "regenerator-runtime": "^0.13.5",
-    "terser-webpack-plugin": "^2.3.5",
-    "webpack-merge": "^4.2.2"
+    "axios": "^1.1.2",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "turnstone": "^2.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "jest": "^25.2.3",
-    "style-loader": "^1.1.3",
-    "url-loader": "^4.0.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "autoprefixer": "^10.4.12",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   }
 }
