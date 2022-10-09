@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import SearchInput from "../components/SearchInput";
-import weatherTypes from "../data/weatherTypes";
-import { getWeatherByCityId, getWeatherByCoords } from "../services/api";
-import style from "../styles/Home.module.css";
+import SearchInput from '../components/SearchInput';
+import weatherTypes from '../data/weatherTypes';
+import { getWeatherByCityId, getWeatherByCoords } from '../services/api';
+import style from '../styles/Home.module.css';
 
 const Home = () => {
   const [weatherData, setWeatherData] = useState({});
-  const [background, setBackground] = useState("");
+  const [background, setBackground] = useState('');
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { data } = await getWeatherByCoords(
         position.coords.latitude,
-        position.coords.longitude
+        position.coords.longitude,
       );
       setWeatherData(data);
       setBackground(weatherTypes[data.weather[0].icon]);

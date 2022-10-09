@@ -1,13 +1,13 @@
-import { useState } from "react";
-import Turnstone from "turnstone";
-import cityList from "../data/cityList.json";
+import { useState } from 'react';
+import Turnstone from 'turnstone';
+import cityList from '../data/cityList.json';
 
 const styles = {
-  input: "searchInput",
-  query: "searchInputQuery",
-  listbox: "searchResults",
-  item: "searchResultsItem",
-  highlightedItem: "searchResultsItemHover",
+  input: 'searchInput',
+  query: 'searchInputQuery',
+  listbox: 'searchResults',
+  item: 'searchResultsItem',
+  highlightedItem: 'searchResultsItemHover',
 };
 
 const SearchInput = ({ onSearch }) => {
@@ -18,8 +18,8 @@ const SearchInput = ({ onSearch }) => {
       ...city,
       displayName: `${city.name}, ${city.country}`,
     })),
-    searchType: "startswith",
-    displayField: "displayName",
+    searchType: 'startswith',
+    displayField: 'displayName',
   };
 
   return (
