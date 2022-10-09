@@ -1,6 +1,7 @@
 {
   "name": "weather-report",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Your city's weather info, one click away, is just awaiting for you!",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,18 +9,50 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Israel-Laguan/Weather-Report.git"
+  },
+  "keywords": [
+    "async",
+    "javascript",
+    "js",
+    "app",
+    "eslint",
+    "ES6",
+    "Test",
+    "Next.js"
+  ],
+  "author": "Israel Laguan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Israel-Laguan/Weather-Report/issues"
+  },
+  "homepage": "https://github.com/Israel-Laguan/Weather-Report#readme",
   "dependencies": {
-    "axios": "^1.1.2",
+    "axios": "~1.1.2",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "turnstone": "^2.2.0"
+    "turnstone": "~2.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "~10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
-    "postcss": "^8.4.17",
-    "tailwindcss": "^3.1.8"
+    "postcss": "~8.4.17",
+    "tailwindcss": "~3.1.8"
   }
 }

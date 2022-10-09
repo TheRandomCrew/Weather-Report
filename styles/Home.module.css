@@ -6,15 +6,7 @@
 }
 
 .card {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 1fr;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @apply w-full h-full grid grid-cols-10 grid-rows-1 bg-cover bg-center bg-no-repeat;
 }
 
 .card::after {
@@ -26,13 +18,12 @@
 
 .info {
   grid-area: 1 / 1 / 2 / 8;
-  z-index: 2;
+  @apply mt-10 z-10 text-white;
 }
 
 .sidebar {
   grid-area: 1 / 8 / 2 / 11;
-  z-index: 2;
-  color: #fff;
+  @apply mt-10 z-10 text-white;
 }
 
 /* WEATHER TYPES */
