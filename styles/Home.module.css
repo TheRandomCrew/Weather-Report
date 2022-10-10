@@ -1,0 +1,60 @@
+.app {
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card {
+  @apply w-full h-full grid grid-cols-10 grid-rows-1 bg-cover bg-center bg-no-repeat;
+}
+
+.card::after {
+  content: '';
+  grid-column: 1 / 11;
+  grid-row: 1 / 2;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.info {
+  grid-area: 1 / 1 / 2 / 8;
+  @apply mt-10 z-10 text-white;
+}
+
+.sidebar {
+  grid-area: 1 / 8 / 2 / 11;
+  @apply mt-10 z-10 text-white;
+}
+
+/* WEATHER TYPES */
+.clear-sky-day {
+  background-image: url('/weather/clear-sky-day.jpg');
+}
+
+.clear-sky-night {
+  background-image: url('/weather/clear-sky-night.jpg');
+}
+
+.clouds-day {
+  background-image: url('/weather/clouds-day.jpg');
+}
+
+.clouds-night {
+  background-image: url('/weather/clouds-night.jpg');
+}
+
+.rain {
+  background-image: url('/weather/rain.jpg');
+}
+
+.thunderstorm {
+  background-image: url('/weather/thunderstorm.jpg');
+}
+
+.snow {
+  background-image: url('/weather/snow.jpg');
+}
+
+.mist {
+  background-image: url('/weather/mist.jpg');
+}
