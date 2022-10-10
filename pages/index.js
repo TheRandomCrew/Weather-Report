@@ -28,9 +28,7 @@ const Home = () => {
 
   return (
     <div className={style.app}>
-      <div
-        className={`${style.card} ${style[background]}`}
-      >
+      <div className={`${style.card} ${style[background]}`}>
         <div className={style.info}>
           <SearchInput onSearch={onSearch} />
           <h1 className="text-3xl">{weatherData.name}</h1>
