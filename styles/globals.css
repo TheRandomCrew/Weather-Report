@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000033;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0000004b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000004d;
+}
+
 html,
 body {
   margin: 0;
@@ -19,6 +35,10 @@ body {
 
 #__next {
 	height: 100%;
+}
+
+.react-switch-bg {
+  border: 2px solid #fff;
 }
 
 .searchInput {
