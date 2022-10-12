@@ -1,20 +1,18 @@
 import { createContext, useState } from 'react';
 
 const TemperatureUnitContext = createContext({
-  temperatureUnit: 'celsius',
+  isCelsius: true,
   toggleTemperatureUnit: () => {},
 });
 
 export const TemperatureUnitProvider = (props) => {
-  const [temperatureUnit, setTemperatureUnit] = useState('celsius');
+  const [isCelsius, setIsCelsius] = useState(true);
 
-  const toggleTemperatureUnit = () => (temperatureUnit === 'celsius'
-    ? setTemperatureUnit('fahrenheit')
-    : setTemperatureUnit('celsius'));
+  const toggleTemperatureUnit = () => setIsCelsius(!isCelsius);
 
   return (
     <TemperatureUnitContext.Provider
-      value={{ temperatureUnit, toggleTemperatureUnit }}
+      value={{ isCelsius, toggleTemperatureUnit }}
     >
       {props.children}
     </TemperatureUnitContext.Provider>

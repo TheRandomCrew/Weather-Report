@@ -11,7 +11,7 @@ import { getWeatherByCityId, getWeatherByCoords } from '../services/api';
 import style from '../styles/Home.module.css';
 
 const Home = () => {
-  const { temperatureUnit } = useContext(TemperatureUnitContext);
+  const { isCelsius } = useContext(TemperatureUnitContext);
   const [weatherData, setWeatherData] = useState({});
   const [background, setBackground] = useState('');
   const [loading, setLoading] = useState(true);
@@ -51,7 +51,11 @@ const Home = () => {
           <div className={style.info}>
             <SearchInput onSearch={onSearch} />
             <h1 className="text-3xl">{weatherData.name}</h1>
-            <h1>{kelvinToOthers(weatherData?.main?.temp)[temperatureUnit]}°</h1>
+            {isCelsius ? (
+              <h1>{kelvinToOthers(weatherData?.main?.temp).celsius}°</h1>
+            ) : (
+              <h1>{kelvinToOthers(weatherData?.main?.temp).fahrenheit}°</h1>
+            )}
           </div>
           <div className={style.sidebar}>
             <Sidebar data={weatherData} />
