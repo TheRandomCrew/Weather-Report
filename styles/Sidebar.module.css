@@ -1,0 +1,7 @@
+.title {
+  @apply lg:text-4xl md:text-2xl text-xl text-center font-medium;
+}
+
+.divider {
+  @apply border-t-2 my-2 border-white;
+}

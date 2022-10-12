@@ -23,7 +23,7 @@
 
 .sidebar {
   grid-area: 1 / 8 / 2 / 11;
-  @apply mt-10 z-10 text-white;
+  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 overflow-y-scroll;
 }
 
 /* WEATHER TYPES */
