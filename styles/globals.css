@@ -7,15 +7,15 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #00000033;
+  @apply bg-black bg-opacity-20;;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0000004b;
+  @apply bg-black bg-opacity-30;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0000004d;
+  @apply bg-black bg-opacity-40;
 }
 
 html,

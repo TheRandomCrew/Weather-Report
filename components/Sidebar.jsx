@@ -2,13 +2,12 @@ import React from 'react';
 import { timestampToTime } from '../lib/converter';
 import InfoItem from './InfoItem';
 import TemperatureSwitch from './TemperatureSwitch';
+import styles from '../styles/Sidebar.module.css';
 
 const Sidebar = ({ data }) => (
   <>
-    <h1 className="lg:text-4xl md:text-2xl text-xl text-center font-medium">
-      More Info
-    </h1>
-    <hr className="border-t-2 my-2 border-white" />
+    <h1 className={styles.title}>More Info</h1>
+    <hr className={styles.divider} />
     <InfoItem
       name="Wind"
       value={`${data?.wind?.speed} m/s ${data?.wind?.deg}°`}
