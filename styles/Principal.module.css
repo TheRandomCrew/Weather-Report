@@ -1,0 +1,56 @@
+.temperatura{
+    position: relative;
+    font-size: 4vw;
+    font-weight: 900;
+    bottom:  140px;
+}
+.felss{
+    font-family: arial;
+    position: relative;
+    bottom:  155px;
+    font-weight: 900;
+   
+}
+.ciudad{
+    
+    font-size: 3vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+
+}
+.indicativo{
+      font-size: 2vw;
+       font-weight: 900;
+        display: flex;
+        justify-content: flex-end;
+      
+}
+.like{
+    position: relative;
+    font-size: 2vw;
+    font-weight: 500;
+    bottom:  165px;
+}
+.ima{
+    position: relative;
+    font-size: 2vw;
+    font-weight: 500;
+    bottom:  100px;
+}
+.over{
+    position: relative;
+    font-size: 2vw;
+    font-weight: 500;
+    bottom:  245px;
+    left: 200px;
+}
+.claus{
+    position: relative;
+    font-size: 2vw;
+    font-weight: 500;
+    bottom:  245px;
+    left: 200px;
+}
