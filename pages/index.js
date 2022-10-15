@@ -1,6 +1,4 @@
-
-
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
 import Principal from '../components/principal';
 import SearchInput from '../components/SearchInput';
@@ -11,7 +9,6 @@ import { getWeatherByCityId, getWeatherByCoords } from '../services/api';
 import style from '../styles/Home.module.css';
 
 const Home = () => {
-  
   const [weatherData, setWeatherData] = useState({});
   const [background, setBackground] = useState('');
   const [loading, setLoading] = useState(true);
@@ -50,7 +47,7 @@ const Home = () => {
         <div className={`${style.card} ${style[background]}`}>
           <div className={style.info}>
             <SearchInput onSearch={onSearch} />
-          
+
           </div>
 
           <div className={style.cont}>
