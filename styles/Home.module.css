@@ -17,7 +17,7 @@
 }
 
 .info {
-  grid-area: 2 / 2 / 3 / 10;
+  grid-area: 2 / 1 / 2 / 10;
   @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4;
 }
 
@@ -25,21 +25,20 @@
   grid-area: 1 / 10 / 7 / 13;
   @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 overflow-y-scroll;
 }
-.Principal{
+.main{
   grid-area: 3 / 1 / 13 / 10;
-  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4;
-
+  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 grid grid-cols-6 grid-rows-6;
 }
-.cont{
+.container{
   grid-area: 1 / 1 / 2 / 10;
-  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4;
+  @apply mt-10 z-10 text-white ;
+}
 
+.Title{
+  @apply lg:text-6xl text-center font-medium font-bold;
 }
-.titulo{
-  @apply lg:text-6xl md:text-2xl text-xl text-center font-medium;
-}
-.subtitulo{
-  @apply lg:text-2xl md:text-2xl text-xl text-center font-medium;
+.Caption{
+  @apply lg:text-3xl text-center font-light ;
 }
 
 /* WEATHER TYPES */

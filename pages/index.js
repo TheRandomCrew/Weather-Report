@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
-import Principal from '../components/principal';
+import MainInfo from '../components/MainInfo';
 import SearchInput from '../components/SearchInput';
 import Sidebar from '../components/Sidebar';
 import { DEFAULT_CITY_ID } from '../constants';
@@ -50,14 +50,14 @@ const Home = () => {
 
           </div>
 
-          <div className={style.cont}>
-            <h1 className={style.titulo}>weather Report</h1>
-            <h3 className={style.subtitulo}>Check the weather eassier tha ever </h3>
-            </div>
+          <div className={style.container}>
+            <h1 className={style.Title}>Weather Report</h1>
+            <h3 className={style.Caption}>Check the weather easier than ever </h3>
+          </div>
 
-          <div className={style.Principal}>
-            <Principal data={weatherData} />
-            </div>
+          <div className={style.main}>
+            <MainInfo data={weatherData} />
+          </div>
           <div className={style.sidebar}>
             <Sidebar data={weatherData} />
           </div>
