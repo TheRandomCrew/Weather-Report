@@ -40,7 +40,7 @@
   @apply lg:text-6xl text-center font-medium font-bold;
 }
 
-.Caption {
+.caption {
   @apply lg:text-3xl text-center font-light;
 }
 

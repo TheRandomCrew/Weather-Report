@@ -9,24 +9,24 @@ const MainInfo = ({ data }) => {
   return (
 
     <>
-      <h1 className={styles.city}> {(data?.name)}</h1>
-      <h1 className={styles.country}> {(data?.sys?.country)}</h1>
+      <h1 className={styles.city}>{(data?.name)}</h1>
+      <h1 className={styles.country}>{(data?.sys?.country)}</h1>
 
       {isCelsius ? (
-      <h1 className={styles.temperature}> {kelvinToOthers(data?.main?.temp).celsius}C°</h1>
+        <h1 className={styles.temperature}>{kelvinToOthers(data?.main?.temp).celsius}C°</h1>
       ) : (
-        <h1 className={styles.temperature}> {kelvinToOthers(data?.main?.temp).fahrenheit}F°</h1>
+        <h1 className={styles.temperature}>{kelvinToOthers(data?.main?.temp).fahrenheit}F°</h1>
       )}
 
       <h1 className={styles.feels} >feels like</h1>
 
       {isCelsius ? (
-        <h1 className={styles.temp}> {kelvinToOthers(data?.main?.feels_like).celsius}C°</h1>
+        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).celsius}C°</h1>
       ) : (
-        <h1 className={styles.temp}> {kelvinToOthers(data?.main?.feels_like).fahrenheit}F°</h1>
+        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).fahrenheit}F°</h1>
       )}
 
-      <p className={styles.Clouds}><img src={iconUrl} alt="icon" />{data.weather[0].description}</p>
+      <p className={styles.clouds}><img src={iconUrl} alt="icon" />{data.weather[0].description}</p>
     </>
   );
 };

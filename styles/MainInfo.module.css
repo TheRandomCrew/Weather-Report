@@ -23,7 +23,7 @@
     @apply mt-10 text-white text-right lg:text-4xl font-medium;
 }
 
-.Clouds {
+.clouds {
     grid-area: 5 / 2 / 6 / 3;
     @apply text-white text-center lg:text-3xl flex flex-row;
 }

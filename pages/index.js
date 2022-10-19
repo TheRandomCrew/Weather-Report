@@ -51,7 +51,7 @@ const Home = () => {
 
           <div className={style.container}>
             <h1 className={style.title}>Weather Report</h1>
-            <h3 className={style.Caption}>Check the weather easier than ever</h3>
+            <h3 className={style.caption}>Check the weather easier than ever</h3>
           </div>
 
           <div className={style.main}>
