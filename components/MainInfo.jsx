@@ -8,7 +8,7 @@ const MainInfo = ({ data }) => {
   let iconUrl = '';
   const { isCelsius } = useContext(TemperatureUnitContext);
   url = 'http://openweathermap.org/img/w/';
-  iconUrl = `${url + data.weather[0].icon}.png`;
+  const iconUrl = `${url}${data.weather[0].icon}.png`;
   return (
 
     <>
