@@ -1,34 +1,29 @@
-.city{
+.city {
     grid-area: 1 / 3 / 1 / 6;
-    @apply  z-10 text-white text-right lg:text-7xl  ;
-
+    @apply z-10 text-white text-right lg:text-7xl;
 }
 
-.country{
+.country {
     grid-area: 2 / 5 / 2 / 6;
-    @apply text-white text-right lg:text-4xl  ;
-
+    @apply text-white text-right lg:text-4xl;
 }
 
-.temperature{
+.temperature {
     grid-area: 1 / 1 / 2 / 3;
-    @apply text-7xl text-white text-center font-medium ;
-
+    @apply text-7xl text-white text-center font-medium;
 }
 
-.feels{
+.feels {
     grid-area: 2 / 1 / 2 / 3;
-    @apply text-white text-center lg:text-4xl  ;
+    @apply text-white text-center lg:text-4xl;
 }
 
-.temp
-{
+.temp {
     grid-area: 2 / 1 / 2 / 2;
-    @apply mt-10 text-white text-right lg:text-4xl font-medium  ;
-    
-   }
+    @apply mt-10 text-white text-right lg:text-4xl font-medium;
+}
 
-.Clouds{
+.Clouds {
     grid-area: 5 / 2 / 6 / 3;
-    @apply text-white text-center lg:text-3xl flex flex-row ;
+    @apply text-white text-center lg:text-3xl flex flex-row;
 }
