@@ -1,0 +1,29 @@
+.city {
+    grid-area: 1 / 3 / 1 / 6;
+    @apply z-10 text-white text-right lg:text-7xl;
+}
+
+.country {
+    grid-area: 2 / 5 / 2 / 6;
+    @apply text-white text-right lg:text-4xl;
+}
+
+.temperature {
+    grid-area: 1 / 1 / 2 / 3;
+    @apply text-7xl text-white text-center font-medium;
+}
+
+.feels {
+    grid-area: 2 / 1 / 2 / 3;
+    @apply text-white text-center lg:text-4xl;
+}
+
+.temp {
+    grid-area: 2 / 1 / 2 / 2;
+    @apply mt-10 text-white text-right lg:text-4xl font-medium;
+}
+
+.clouds {
+    grid-area: 5 / 2 / 6 / 3;
+    @apply text-white text-center lg:text-3xl flex flex-row;
+}

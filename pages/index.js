@@ -1,17 +1,14 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from '../components/Loading';
-
+import MainInfo from '../components/MainInfo';
 import SearchInput from '../components/SearchInput';
 import Sidebar from '../components/Sidebar';
 import { DEFAULT_CITY_ID } from '../constants';
-import TemperatureUnitContext from '../context/TemperatureUnit';
 import weatherTypes from '../data/weatherTypes';
-import { kelvinToOthers } from '../lib/converter';
 import { getWeatherByCityId, getWeatherByCoords } from '../services/api';
 import style from '../styles/Home.module.css';
 
 const Home = () => {
-  const { isCelsius } = useContext(TemperatureUnitContext);
   const [weatherData, setWeatherData] = useState({});
   const [background, setBackground] = useState('');
   const [loading, setLoading] = useState(true);
@@ -50,12 +47,15 @@ const Home = () => {
         <div className={`${style.card} ${style[background]}`}>
           <div className={style.info}>
             <SearchInput onSearch={onSearch} />
-            <h1 className="text-3xl">{weatherData.name}</h1>
-            {isCelsius ? (
-              <h1>{kelvinToOthers(weatherData?.main?.temp).celsius}°</h1>
-            ) : (
-              <h1>{kelvinToOthers(weatherData?.main?.temp).fahrenheit}°</h1>
-            )}
+          </div>
+
+          <div className={style.container}>
+            <h1 className={style.title}>Weather Report</h1>
+            <h3 className={style.caption}>Check the weather easier than ever</h3>
+          </div>
+
+          <div className={style.main}>
+            <MainInfo data={weatherData} />
           </div>
           <div className={style.sidebar}>
             <Sidebar data={weatherData} />
