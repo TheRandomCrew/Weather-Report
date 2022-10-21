@@ -6,27 +6,37 @@ import styles from '../styles/MainInfo.module.css';
 const MainInfo = ({ data }) => {
   const { isCelsius } = useContext(TemperatureUnitContext);
   const iconUrl = `${'http://openweathermap.org/img/wn/'}${data.weather[0].icon}.png`;
+  const description = `${data.weather[0].description}`;
   return (
 
     <>
-      <h1 className={styles.city}>{(data?.name)}</h1>
-      <h1 className={styles.country}>{(data?.sys?.country)}</h1>
+      <div className={styles.contenedorCity}>
+        <h1 className={styles.city}>{(data?.name)}</h1>
+        {isCelsius ? (
+          <h1 className={styles.temperature}>
+            {kelvinToOthers(data?.main?.temp).celsius}
+            <span className={styles.temperatureNumber}>°C</span>
+          </h1>
+        ) : (
+          <h1 className={styles.temperature}>
+            {kelvinToOthers(data?.main?.temp).fahrenheit}
+            <span className={styles.temperatureNumber}>°F</span></h1>
+        )}
+      </div>
+
+      <div className={styles.contenedorCountry}>
+        <h1 className={styles.country}>{(data?.sys?.country)}</h1>
+        <h1 className={styles.feels} >Feels like</h1>
+      </div>
 
       {isCelsius ? (
-        <h1 className={styles.temperature}>{kelvinToOthers(data?.main?.temp).celsius}C°</h1>
+        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).celsius}
+          <span className={styles.tempNumber}>°C</span></h1>
       ) : (
-        <h1 className={styles.temperature}>{kelvinToOthers(data?.main?.temp).fahrenheit}F°</h1>
+        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).fahrenheit}
+          <span className={styles.tempNumber}>°F</span></h1>
       )}
-
-      <h1 className={styles.feels} >feels like</h1>
-
-      {isCelsius ? (
-        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).celsius}C°</h1>
-      ) : (
-        <h1 className={styles.temp}>{kelvinToOthers(data?.main?.feels_like).fahrenheit}F°</h1>
-      )}
-
-      <p className={styles.clouds}><img src={iconUrl} alt="icon" />{data.weather[0].description}</p>
+      <p className={styles.clouds}><img src={iconUrl} alt="icon" />{description.toUpperCase()}</p>
     </>
   );
 };

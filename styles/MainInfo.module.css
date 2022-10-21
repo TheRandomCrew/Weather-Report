@@ -1,29 +1,39 @@
+.contenedorCity {
+    @apply flex justify-between;
+}
+
+.contenedorCountry {
+    @apply flex justify-between;
+}
+
 .city {
-    grid-area: 1 / 3 / 1 / 6;
-    @apply z-10 text-white text-right lg:text-7xl;
+    @apply lg:text-5xl font-medium order-1;
 }
 
 .country {
-    grid-area: 2 / 5 / 2 / 6;
-    @apply text-white text-right lg:text-4xl;
+    @apply lg:text-3xl font-light order-1;
 }
 
 .temperature {
-    grid-area: 1 / 1 / 2 / 3;
-    @apply text-7xl text-white text-center font-medium;
+    @apply text-5xl font-medium items-start flex;
 }
 
 .feels {
-    grid-area: 2 / 1 / 2 / 3;
-    @apply text-white text-center lg:text-4xl;
+    @apply text-2xl text-left font-light;
 }
 
 .temp {
-    grid-area: 2 / 1 / 2 / 2;
-    @apply mt-10 text-white text-right lg:text-4xl font-medium;
+    @apply mb-20 text-2xl font-medium items-start flex;
 }
 
 .clouds {
-    grid-area: 5 / 2 / 6 / 3;
-    @apply text-white text-center lg:text-3xl flex flex-row;
+    @apply text-2xl items-center font-light flex;
+}
+
+.temperatureNumber {
+    @apply text-2xl text-center;
+}
+
+.tempNumber {
+    @apply text-base text-center;
 }
