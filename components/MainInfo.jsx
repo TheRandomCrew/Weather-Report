@@ -6,11 +6,11 @@ import styles from '../styles/MainInfo.module.css';
 const MainInfo = ({ data }) => {
   const { isCelsius } = useContext(TemperatureUnitContext);
   const iconUrl = `${'http://openweathermap.org/img/wn/'}${data.weather[0].icon}.png`;
-  const description = `${data.weather[0].description}`;
+  const { description } = data.weather[0];
   return (
 
     <>
-      <div className={styles.contenedorCity}>
+      <div className={styles.cityContainer}>
         <h1 className={styles.city}>{(data?.name)}</h1>
         {isCelsius ? (
           <h1 className={styles.temperature}>
@@ -24,7 +24,7 @@ const MainInfo = ({ data }) => {
         )}
       </div>
 
-      <div className={styles.contenedorCountry}>
+      <div className={styles.countryContainer}>
         <h1 className={styles.country}>{(data?.sys?.country)}</h1>
         <h1 className={styles.feels} >Feels like</h1>
       </div>

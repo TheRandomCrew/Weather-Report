@@ -1,8 +1,8 @@
-.contenedorCity {
+.cityContainer {
     @apply flex justify-between;
 }
 
-.contenedorCountry {
+.countryContainer {
     @apply flex justify-between;
 }
 
