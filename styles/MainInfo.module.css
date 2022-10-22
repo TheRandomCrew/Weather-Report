@@ -1,8 +1,4 @@
-.cityContainer {
-    @apply flex justify-between;
-}
-
-.countryContainer {
+.container {
     @apply flex justify-between;
 }
 
@@ -23,7 +19,7 @@
 }
 
 .temp {
-    @apply mb-20 text-2xl font-medium items-start flex;
+    @apply mb-10 text-2xl font-medium items-start flex;
 }
 
 .clouds {
