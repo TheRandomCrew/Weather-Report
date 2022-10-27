@@ -1,12 +1,9 @@
 .app {
-  height: 100%;
-  padding: 2rem;
-  overflow: hidden;
-  background: #fff;
+  @apply sm:h-full md:p-8 sm:overflow-hidden bg-white;
 }
 
 .card {
-  @apply w-full h-full grid grid-cols-12 grid-rows-6 bg-cover bg-center bg-no-repeat;
+  @apply w-full h-full grid grid-cols-12 bg-cover bg-center bg-no-repeat;
 }
 
 .card::after {
@@ -17,31 +14,42 @@
 }
 
 .info {
-  grid-area: 2 / 1 / 2 / 10;
   @apply mt-10 z-20 text-white lg:px-12 md:px-6 px-4;
 }
 
 .sidebar {
-  grid-area: 1 / 10 / 7 / 13;
-  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 overflow-y-scroll;
+  grid-area: 1 / 10 / 2 / 13;
+  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 sm:overflow-y-scroll;
 }
 
 .main {
-  grid-area: 3 / 2 / 13 / 9;
-  @apply mt-20 z-10 text-white lg:px-5;
+  grid-area: 1 / 1 / 2 / 10;
+  @apply z-10 text-white lg:px-5;
 }
 
-.container {
-  grid-area: 1 / 1 / 2 / 10;
+@media (max-width: 640px) {
+  .sidebar {
+    grid-area: 2 / 1 / 2 / 13;
+  }
+  .main {
+    grid-area: 1 / 1 / 2 / 13;
+  }
+}
+
+.mainContainer {
+  @apply flex flex-col justify-between px-10 mt-8;
+}
+
+.titleContainer {
   @apply mt-10 z-10 text-lime-400;
 }
 
 .title {
-  @apply lg:text-6xl text-center font-medium font-bold;
+  @apply md:text-6xl text-4xl text-center font-bold;
 }
 
 .caption {
-  @apply lg:text-3xl text-center font-light;
+  @apply md:text-3xl text-2xl text-center font-light;
 }
 
 /* WEATHER TYPES */

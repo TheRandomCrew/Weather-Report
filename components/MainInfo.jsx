@@ -5,37 +5,56 @@ import styles from '../styles/MainInfo.module.css';
 
 const MainInfo = ({ data }) => {
   const { isCelsius } = useContext(TemperatureUnitContext);
-  const iconUrl = `${'http://openweathermap.org/img/wn/'}${data.weather[0].icon}@4x.png`;
-  const { description } = data.weather[0];
+  const { description, icon } = data.weather[0];
+  const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
   const { feels_like: feelsLike, temp } = data.main;
   return (
-
     <>
       <div className={styles.container}>
-        <h1 className={styles.city}>{(data?.name)}</h1>
-        {isCelsius ? (
-          <h1 className={styles.temperature}>{kelvinToOthers(temp).celsius}
-            <span className={styles.temperatureNumber}>°C</span>
-          </h1>
-        ) : (
-          <h1 className={styles.temperature}>{kelvinToOthers(temp).fahrenheit}
-            <span className={styles.temperatureNumber}>°F</span></h1>
-        )}
-      </div>
+        <div className={styles.leftContent}>
+          {isCelsius ? (
+            <h1 className={styles.temperature}>
+              {kelvinToOthers(temp).celsius}
+              <span className={styles.temperatureUnit}>°C</span>
+            </h1>
+          ) : (
+            <h1 className={styles.temperature}>
+              {kelvinToOthers(temp).fahrenheit}
+              <span className={styles.temperatureUnit}>°F</span>
+            </h1>
+          )}
 
-      <div className={styles.container}>
-        <h1 className={styles.country}>{(data?.sys?.country)}</h1>
-        <h1 className={styles.feels} >Feels like</h1>
-      </div>
+          <h1 className={styles.feels}>Feels like</h1>
 
-      {isCelsius ? (
-        <h1 className={styles.temp}>{kelvinToOthers(feelsLike).celsius}
-          <span className={styles.tempNumber}>°C</span></h1>
-      ) : (
-        <h1 className={styles.temp}>{kelvinToOthers(feelsLike).fahrenheit}
-          <span className={styles.tempNumber}>°F</span></h1>
-      )}
-      <p className={styles.clouds}><img src={iconUrl} alt="icon" />{description.toUpperCase()}</p>
+          {isCelsius ? (
+            <h1 className={styles.temp}>
+              {kelvinToOthers(feelsLike).celsius}
+              <span className={styles.tempUnit}>°C</span>
+            </h1>
+          ) : (
+            <h1 className={styles.temp}>
+              {kelvinToOthers(feelsLike).fahrenheit}
+              <span className={styles.tempUnit}>°F</span>
+            </h1>
+          )}
+          <p className={styles.icon}>
+            <img src={iconUrl} alt={`${description} icon`} />
+            {description
+              .toUpperCase()
+              .split(' ')
+              .map((part) => (
+                <>
+                  {part}
+                  <br />
+                </>
+              ))}
+          </p>
+        </div>
+        <div className={styles.rightContent}>
+          <h1 className={styles.city}>{data?.name}</h1>
+          <h1 className={styles.country}>{data?.sys?.country}</h1>
+        </div>
+      </div>
     </>
   );
 };

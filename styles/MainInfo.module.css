@@ -1,35 +1,39 @@
 .container {
-    @apply flex justify-between;
+    @apply flex sm:justify-between sm:flex-row flex-col-reverse justify-start;
 }
 
 .city {
-    @apply lg:text-5xl font-medium order-1;
+    @apply md:text-5xl text-4xl font-medium;
 }
 
 .country {
-    @apply lg:text-3xl font-light order-1;
+    @apply md:text-3xl text-2xl font-light;
 }
 
 .temperature {
-    @apply text-5xl font-medium items-start flex;
+    @apply md:text-8xl text-6xl font-medium items-start flex;
 }
 
 .feels {
-    @apply text-2xl text-left font-light;
+    @apply md:text-2xl text-xl text-left font-light;
 }
 
 .temp {
-    @apply mb-10 text-2xl font-medium items-start flex;
+    @apply  md:text-4xl text-3xl font-medium items-start flex;
 }
 
-.clouds {
+.icon {
     @apply text-2xl items-center font-light flex;
 }
 
-.temperatureNumber {
-    @apply text-2xl text-center;
+.temperatureUnit {
+    @apply md:text-2xl text-xl text-center;
 }
 
-.tempNumber {
-    @apply text-base text-center;
+.tempUnit {
+    @apply text-base text-center text-xl;
+}
+
+.rightContent {
+    @apply flex flex-col sm:items-end;
 }
