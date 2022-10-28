@@ -44,25 +44,28 @@ const Home = () => {
       {loading ? (
         <Loading />
       ) : (
-        <div className={`${style.card} ${style[background]}`}>
-          <div className={style.main}>
-            <div className={style.titleContainer}>
-              <h1 className={style.title}>Weather Report</h1>
-              <h3 className={style.caption}>
-                Check the weather easier than ever
-              </h3>
-            </div>
+        <div className={style[background]}>
+          <div className={style.card}>
+            <div className={style.cardContent}>
+              <div className={style.main}>
+                <div className={style.titleContainer}>
+                  <h1 className={style.title}>Weather Report</h1>
+                  <h3 className={style.caption}>
+                    Check the weather easier than ever
+                  </h3>
+                </div>
+                <div className={style.info}>
+                  <SearchInput onSearch={onSearch} />
+                </div>
 
-            <div className={style.info}>
-              <SearchInput onSearch={onSearch} />
+                <div className={style.mainContainer}>
+                  <MainInfo data={weatherData} />
+                </div>
+              </div>
+              <div className={style.sidebar}>
+                <Sidebar data={weatherData} />
+              </div>
             </div>
-
-            <div className={style.mainContainer}>
-              <MainInfo data={weatherData} />
-            </div>
-          </div>
-          <div className={style.sidebar}>
-            <Sidebar data={weatherData} />
           </div>
         </div>
       )}

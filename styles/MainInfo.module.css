@@ -1,5 +1,5 @@
 .container {
-    @apply flex sm:justify-between sm:flex-row flex-col-reverse justify-start;
+    @apply flex sm:justify-between sm:flex-row flex-col-reverse justify-start xl:px-16 2xl:px-24;
 }
 
 .city {
@@ -31,7 +31,7 @@
 }
 
 .tempUnit {
-    @apply text-base text-center text-xl;
+    @apply text-center text-xl;
 }
 
 .rightContent {

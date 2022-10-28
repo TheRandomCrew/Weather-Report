@@ -3,14 +3,17 @@
 }
 
 .card {
-  @apply w-full h-full grid grid-cols-12 bg-cover bg-center bg-no-repeat;
+  @apply w-full h-full relative;
 }
 
 .card::after {
   content: '';
-  grid-column: 1 / 13;
-  grid-row: 1 / 7;
   background: rgba(0, 0, 0, 0.6);
+  @apply absolute w-full h-full top-0 left-0;
+}
+
+.cardContent {
+  @apply grid grid-cols-12 h-full mx-auto max-w-7xl;
 }
 
 .info {
@@ -55,32 +58,40 @@
 /* WEATHER TYPES */
 .clear-sky-day {
   background-image: url('/weather/clear-sky-day.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clear-sky-night {
   background-image: url('/weather/clear-sky-night.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clouds-day {
   background-image: url('/weather/clouds-day.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clouds-night {
   background-image: url('/weather/clouds-night.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .rain {
   background-image: url('/weather/rain.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .thunderstorm {
   background-image: url('/weather/thunderstorm.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .snow {
   background-image: url('/weather/snow.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .mist {
   background-image: url('/weather/mist.jpg');
+  @apply bg-cover bg-center bg-no-repeat h-full;
 }
