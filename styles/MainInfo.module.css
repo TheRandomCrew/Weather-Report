@@ -1,5 +1,6 @@
 .container {
-    @apply flex sm:justify-between sm:flex-row flex-col-reverse justify-start xl:px-16 2xl:px-24;
+    @apply flex flex-col-reverse justify-start;
+    @apply sm:justify-between sm:flex-row xl:px-16 2xl:px-24;
 }
 
 .city {

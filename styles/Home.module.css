@@ -57,42 +57,38 @@
 }
 
 /* WEATHER TYPES */
+.clear-sky-day, .clear-sky-night, .clouds-day, .clouds-night, .rain, .thunderstorm,.snow,.mist {
+  @apply bg-cover bg-center bg-no-repeat h-full;
+}
+
 .clear-sky-day {
   background-image: url('/weather/clear-sky-day.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clear-sky-night {
   background-image: url('/weather/clear-sky-night.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clouds-day {
   background-image: url('/weather/clouds-day.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .clouds-night {
   background-image: url('/weather/clouds-night.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .rain {
   background-image: url('/weather/rain.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .thunderstorm {
   background-image: url('/weather/thunderstorm.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .snow {
   background-image: url('/weather/snow.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }
 
 .mist {
   background-image: url('/weather/mist.jpg');
-  @apply bg-cover bg-center bg-no-repeat h-full;
 }

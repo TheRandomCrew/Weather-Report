@@ -11,7 +11,7 @@ const MainInfo = ({ data }) => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.leftContent}>
+        <div>
           {isCelsius ? (
             <h1 className={styles.temperature}>
               {kelvinToOthers(temp).celsius}
