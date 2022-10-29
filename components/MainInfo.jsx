@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { Fragment, useContext } from 'react';
 import { kelvinToOthers } from '../lib/converter';
 import TemperatureUnitContext from '../context/TemperatureUnit';
 import styles from '../styles/MainInfo.module.css';
@@ -42,11 +42,11 @@ const MainInfo = ({ data }) => {
             {description
               .toUpperCase()
               .split(' ')
-              .map((part) => (
-                <>
+              .map((part, i) => (
+                <Fragment key={i}>
                   {part}
                   <br />
-                </>
+                </Fragment>
               ))}
           </p>
         </div>

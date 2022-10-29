@@ -31,7 +31,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Barlow;
+  font-family: Barlow, sans-serif;
 }
 
 #__next {
