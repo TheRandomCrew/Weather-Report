@@ -1,50 +1,66 @@
 .app {
-  height: 100%;
-  padding: 2rem;
-  overflow: hidden;
-  background: #fff;
+  @apply sm:h-full md:p-3 sm:overflow-hidden bg-white;
 }
 
 .card {
-  @apply w-full h-full grid grid-cols-12 grid-rows-6 bg-cover bg-center bg-no-repeat;
+  @apply w-full h-full relative;
 }
 
 .card::after {
   content: '';
-  grid-column: 1 / 13;
-  grid-row: 1 / 7;
   background: rgba(0, 0, 0, 0.6);
+  @apply absolute w-full h-full top-0 left-0;
+}
+
+.cardContent {
+  @apply grid grid-cols-12 h-full mx-auto max-w-7xl;
 }
 
 .info {
-  grid-area: 2 / 1 / 2 / 10;
   @apply mt-10 z-20 text-white lg:px-12 md:px-6 px-4;
 }
 
 .sidebar {
-  grid-area: 1 / 10 / 7 / 13;
-  @apply mt-10 z-10 text-white lg:px-12 md:px-6 px-4 overflow-y-scroll;
+  grid-area: 1 / 10 / 2 / 13;
+  z-index: 3;
+  @apply mt-10 text-white lg:px-12 md:px-6 px-4 sm:overflow-y-scroll;
 }
 
 .main {
-  grid-area: 3 / 2 / 13 / 9;
-  @apply mt-20 z-10 text-white lg:px-5;
+  grid-area: 1 / 1 / 2 / 10;
+  @apply z-10 text-white lg:px-5;
 }
 
-.container {
-  grid-area: 1 / 1 / 2 / 10;
-  @apply mt-10 z-10 text-lime-400;
+@media (max-width: 640px) {
+  .sidebar {
+    grid-area: 2 / 1 / 2 / 13;
+  }
+  .main {
+    grid-area: 1 / 1 / 2 / 13;
+  }
+}
+
+.mainContainer {
+  @apply flex flex-col justify-between px-10 mt-10;
+}
+
+.titleContainer {
+  @apply mt-10 z-10;
 }
 
 .title {
-  @apply lg:text-6xl text-center font-medium font-bold;
+  @apply md:text-6xl text-4xl text-center font-bold;
 }
 
 .caption {
-  @apply lg:text-3xl text-center font-light;
+  @apply md:text-3xl text-2xl text-center font-light;
 }
 
 /* WEATHER TYPES */
+.clear-sky-day, .clear-sky-night, .clouds-day, .clouds-night, .rain, .thunderstorm,.snow,.mist {
+  @apply bg-cover bg-center bg-no-repeat h-full;
+}
+
 .clear-sky-day {
   background-image: url('/weather/clear-sky-day.jpg');
 }

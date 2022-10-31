@@ -8,7 +8,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb-base", "next/core-web-vitals"],
+  "extends": ["airbnb-base", "next"],
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
