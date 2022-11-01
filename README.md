@@ -29,7 +29,7 @@
   </p>
 </p>
 
-[![Home](public/weather/home.png)](http://weather-report-israellaguan.vercel.app/)
+[![Home](docs/home.png)](http://weather-report-israellaguan.vercel.app/)
 
 # The Project
 
@@ -67,7 +67,7 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 ## `ESlint`
 
-![ESlint](public/weather/lint.png)
+![ESlint](docs/lint.png)
 
 # Built With
 
@@ -82,11 +82,11 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Live Demo
 
-[![Home](public/weather/home.png)](http://weather-report-israellaguan.vercel.app/)
+[![Home](docs/home.png)](http://weather-report-israellaguan.vercel.app/)
 
 ### Try the autocomplete feature!
 
-![Menu](public/weather/autocomplete.png)
+![Menu](docs/autocomplete.png)
 
 ## Prerequisites
 
