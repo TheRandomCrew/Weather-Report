@@ -29,7 +29,7 @@
   </p>
 </p>
 
-[![Home](docs/home.png)](http://weather_report.surge.sh/)
+[![Home](docs/home.png)](http://weather-report-israellaguan.vercel.app/)
 
 # The Project
 
@@ -67,7 +67,7 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 ## `ESlint`
 
-![ESlint](docs/linter.png)
+![ESlint](docs/lint.png)
 
 # Built With
 
@@ -82,7 +82,7 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Live Demo
 
-[![Home](docs/home.png)](http://weather_report.surge.sh/)
+[![Home](docs/home.png)](http://weather-report-israellaguan.vercel.app/)
 
 ### Try the autocomplete feature!
 
