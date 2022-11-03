@@ -64,9 +64,6 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 - Connected an API using `async/await`
 - Sets `stickler` on the repo
 - Sets `eslint` rules
-- Tests made with [`ESLint`](https://eslint.org/)
-- And `jest` and `eslint` to be callable with `yarn`
-
 
 # Tests
 
@@ -239,10 +236,10 @@ Feel free to fork this project and improve it
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
 [javascript]: https://img.shields.io/badge/JAVASCRIPT-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript
-[react]: https://img.shields.io/badge/React-16+-61DAFB?style=for-the-badge&logo=react
+[react]: https://img.shields.io/badge/React-18.2+-61DAFB?style=for-the-badge&logo=react
 [eslint]: https://img.shields.io/badge/linter-ESLint-4B32C3?style=for-the-badge&logo=eslint
-[next.js]: https://img.shields.io/badge/NEXT.JS-V13-000000?style=for-the-badge&logo=next.js
-[tailwindCss]: https://img.shields.io/badge/tailwindcss-V3.2.1-9cf?style=for-the-badge&logo=tailwindcss
+[next.js]: https://img.shields.io/badge/NEXT.JS-V12.3-000000?style=for-the-badge&logo=next.js
+[tailwindCss]: https://img.shields.io/badge/tailwindcss-V3.1.8-9cf?style=for-the-badge&logo=tailwindcss
 [openweather]: https://openweathermap.org/
 [javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [react-url]: https://reactjs.org/
