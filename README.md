@@ -50,18 +50,20 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Features
 
-[![Framework][badge-framework]][framework-url]
-![javascript][]
+[![][javascript]][javascript-url] 
+[![][react]][next.js-url] 
+[![][next.js]][javascript-url] 
+[![][tailwindCss]][tailwindCss-url] 
 ![eslint][]
 
-- Basic VanillaJS app with a single script or few commands
+- Next.js
+- React
+- TailwindCss
+- Next.js-Create-App
 - JS modules and ES6+ available for most browsers
-- connected an API using `async/await`
+- Connected an API using `async/await`
 - Sets `stickler` on the repo
 - Sets `eslint` rules
-- Tests made with [`ESLint`](https://eslint.org/)
-- Add `jest` and `eslint` to be callable with `npm`
-
 
 # Tests
 
@@ -71,9 +73,9 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Built With
 
-- Webpack
+- Next.js
 - `ESLint`
-- `npm`
+- `yarn`
 - `vscode` with _ESLint_ extension
 - Linux/GNU
 - Love and Passion for code
@@ -90,38 +92,62 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 ## Prerequisites
 
-- `npm` 6.13 +
-- `node` 11.15 +
+- `yarn` 1.22 +
+- `node` 16.17.1 +
 - A Text Editor like VSCode
 - A browser like Firefox or Chrome
 
 ## Quick Start
 
 ```
-git clone https://github.com/Israel-Laguan/Weather-Report.git
-cd Weather-Report
-npm i && npm start
+> git clone https://github.com/Israel-Laguan/Weather-Report.git
+> cd Weather-Report
+> yarn install
+> yarn dev
 ```
 
 Then open [http://localhost:3000/](http://localhost:3000/) to see the app.
 
-### Where are generated files?
-
-In `development` mode `webpack` does not write generated files to disk, in order to change it
-switch `devServer.writeToDisk` to `true` in [webpack.dev.js](./webpack.common.config.js). The generated files are
-on `dist/` folder.
-
 ### Run development build
 
-- `npm start`
+- `yarn dev`
+Runs the app in the development mode. Open localhost:3000 to view it in the browser.
+
+The page will reload if you make edits. You will also see any lint errors in the console.
 
 ## Production
 
-- `npm run build` to prepare `html`, `css`, `js` files in `dist/` directory
+- `yarn build` 
+Generates an optimized version of your application for production. to prepare `HTMLL`, `CSS`, `JS` 
+This output is generated inside the /next folder.
 
 ## Run tests
 
-Optionally you can run the linter and tests: `npm run linter && npm test`
+Optionally you can run the linter and tests: `yarn lint`
+
+### Learn More
+
+#### Next
+
+[Next](https://nextjs.org) gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
+
+#### React
+
+[React](https://reactjs.org/) is a JavaScript library for building user interfaces.
+
+- Component-Based:
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+- Declarative:
+React makes it painless to create interactive UIs. Design simple views for each state in your.
+
+- Learn Once, Write Anywhere:
+We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+
+#### Tailwind CSS
+
+[Tailwind CSS](https://tailwindcss.com/) is modern utility-first CSS framework. It provides many CSS rules, but these are purged when production builds. So developers do not worry about CSS asset size for performance optimization.
+
 
 # Author
 
@@ -207,10 +233,15 @@ Feel free to fork this project and improve it
 [issues-open-shield]: https://img.shields.io/github/issues/Israel-Laguan/Weather-Report?style=for-the-badge
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/Israel-Laguan/Weather-Report?style=for-the-badge
 [issues-url]: https://github.com/Israel-Laguan/Weather-Report/issues
-[badge-framework]: https://img.shields.io/badge/webpack-v4-9cf?style=for-the-badge&logo=webpack
-[framework-url]: https://webpack.js.org/
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
 [javascript]: https://img.shields.io/badge/JAVASCRIPT-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript
+[react]: https://img.shields.io/badge/React-18.2+-61DAFB?style=for-the-badge&logo=react
 [eslint]: https://img.shields.io/badge/linter-ESLint-4B32C3?style=for-the-badge&logo=eslint
+[next.js]: https://img.shields.io/badge/NEXT.JS-V12.3-000000?style=for-the-badge&logo=next.js
+[tailwindCss]: https://img.shields.io/badge/tailwindcss-V3.1.8-9cf?style=for-the-badge&logo=tailwindcss
 [openweather]: https://openweathermap.org/
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[react-url]: https://reactjs.org/
+[next.js-url]: https://nextjs.org/
+[tailwindCss-url]: https://tailwindcss.com/
