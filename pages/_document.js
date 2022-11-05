@@ -10,6 +10,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
+        <title>Weather Report</title>
       </Head>
       <body>
         <Main />
