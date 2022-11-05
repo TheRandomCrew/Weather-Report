@@ -1,5 +1,4 @@
 <!-- PROJECT SHIELDS -->
-
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues-open][issues-open-shield]][issues-url]
@@ -112,15 +111,15 @@ Then open [http://localhost:3000/](http://localhost:3000/) to see the app.
 ### Run development build
 
 - `yarn dev`
-  Runs the app in the development mode. Open localhost:3000 to view it in the browser.
+Runs the app in the development mode. Open localhost:3000 to view it in the browser.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
 ## Production
 
 - `yarn build`
-  Generates an optimized version of your application for production. to prepare `HTMLL`, `CSS`, `JS`
-  This output is generated inside the /next folder.
+Generates an optimized version of your application for production. to prepare `HTMLL`, `CSS`, `JS`
+This output is generated inside the /next folder.
 
 ## Run tests
 
@@ -137,19 +136,19 @@ Optionally you can run the linter and tests: `yarn lint`
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces.
 
 - Component-Based:
-  Build encapsulated components that manage their own state, then compose them to make complex UIs.
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
 
 - Declarative:
-  React makes it painless to create interactive UIs. Design simple views for each state in your.
+React makes it painless to create interactive UIs. Design simple views for each state in your.
 
 - Learn Once, Write Anywhere:
-  We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
 
 #### Tailwind CSS
 
 [Tailwind CSS](https://tailwindcss.com/) is modern utility-first CSS framework. It provides many CSS rules, but these are purged when production builds. So developers do not worry about CSS asset size for performance optimization.
 
-# Author
+# Authors
 
 <table style="width:100%">
   <tr>
@@ -289,7 +288,6 @@ Give a ⭐️ if you like this project!
 Feel free to fork this project and improve it
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
 [contributors-shield]: https://img.shields.io/github/contributors/Israel-Laguan/Weather-Report?style=for-the-badge
 [contributors-url]: https://github.com/Israel-Laguan/Weather-Report/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Israel-Laguan/Weather-Report?style=for-the-badge
