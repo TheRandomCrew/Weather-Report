@@ -50,10 +50,10 @@ For Microverse based in these [requirements](https://www.theodinproject.com/cour
 
 # Features
 
-[![][javascript]][javascript-url] 
-[![][react]][next.js-url] 
-[![][next.js]][javascript-url] 
-[![][tailwindCss]][tailwindCss-url] 
+[![][javascript]][javascript-url]
+[![][react]][next.js-url]
+[![][next.js]][javascript-url]
+[![][tailwindcss]][tailwindcss-url]
 ![eslint][]
 
 - Next.js
@@ -117,8 +117,8 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 ## Production
 
-- `yarn build` 
-Generates an optimized version of your application for production. to prepare `HTMLL`, `CSS`, `JS` 
+- `yarn build`
+Generates an optimized version of your application for production. to prepare `HTMLL`, `CSS`, `JS`
 This output is generated inside the /next folder.
 
 ## Run tests
@@ -148,8 +148,7 @@ We don’t make assumptions about the rest of your technology stack, so you can 
 
 [Tailwind CSS](https://tailwindcss.com/) is modern utility-first CSS framework. It provides many CSS rules, but these are purged when production builds. So developers do not worry about CSS asset size for performance optimization.
 
-
-# Author
+# Authors
 
 <table style="width:100%">
   <tr>
@@ -193,7 +192,74 @@ We don’t make assumptions about the rest of your technology stack, so you can 
         </div>
     </td>
   </tr>
-</table> 
+  <tr>
+    <td>
+        <div align="center">
+            <a href="./docs/img/photo.png" target="_blank" rel="author">
+                <img src="https://avatars.githubusercontent.com/u/61360270?v=4" style="border-radius: 10%; min-width: 100px;" alt="Emmanuel Azócar's Photo" width="200px">
+            </a>
+            <h2>
+                <a href="https://github.com/e-azocar" target="_blank" rel="author">
+                    Emmanuel Azócar
+                </a>
+            </h2>
+        </div>
+    </td>
+    <td>
+        <div align="center">
+            <a href="mailto:azocarmel@gmail.com" target="_blank" rel="author">
+                <img src="https://img.icons8.com/color/48/000000/message-squared.png" style="border-radius: 10%" alt="My GitHub" height="45px">
+                <h3>
+                    Email me to 
+                    <a href="mailto:azocarmel@gmail.com">
+                        azocarmel@gmail.com
+                    </a>
+                </h3>
+            </a>
+            <a href="https://www.linkedin.com/in/e-azocar/" target="_blank" rel="author">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="My Linkedin" height="45px">
+                <h3>
+                    Connect to my Linkedin
+                </h3>
+            </a>
+            <a href="https://github.com/e-azocar" target="_blank" rel="author">
+                <img src="https://img.icons8.com/color/48/000000/github--v1.png" 
+			style="border-radius: 10%" alt="My GitHub" height="45px"
+		>
+                <h3>
+                    Check my GitHub Profile
+                </h3>
+            </a>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <div align="center">
+            <a href="./docs/img/photo.png" target="_blank" rel="author">
+                <img src="https://avatars.githubusercontent.com/u/93457870?v=4" style="border-radius: 10%; min-width: 100px;" alt="José Luis Yepez's Photo" width="200px">
+            </a>
+            <h2>
+                <a href="https://github.com/joselyepez" target="_blank" rel="author">
+                    José Luis Yepez
+                </a>
+            </h2>
+        </div>
+    </td>
+    <td>
+        <div align="center">
+            <a href="https://github.com/e-azocar" target="_blank" rel="author">
+                <img src="https://img.icons8.com/color/48/000000/github--v1.png" 
+			style="border-radius: 10%" alt="My GitHub" height="45px"
+		>
+                <h3>
+                    Check my GitHub Profile
+                </h3>
+            </a>
+        </div>
+    </td>
+  </tr>
+</table>
 
 # Contributing
 
@@ -201,8 +267,6 @@ We don’t make assumptions about the rest of your technology stack, so you can 
 
 🤝 Contributions, issues and feature requests are welcome!
 Feel free to check the [issues page][issues-url].
-
-
 
 # 🤗 Show your support
 
@@ -239,9 +303,9 @@ Feel free to fork this project and improve it
 [react]: https://img.shields.io/badge/React-18.2+-61DAFB?style=for-the-badge&logo=react
 [eslint]: https://img.shields.io/badge/linter-ESLint-4B32C3?style=for-the-badge&logo=eslint
 [next.js]: https://img.shields.io/badge/NEXT.JS-V12.3-000000?style=for-the-badge&logo=next.js
-[tailwindCss]: https://img.shields.io/badge/tailwindcss-V3.1.8-9cf?style=for-the-badge&logo=tailwindcss
+[tailwindcss]: https://img.shields.io/badge/tailwindcss-V3.1.8-9cf?style=for-the-badge&logo=tailwindcss
 [openweather]: https://openweathermap.org/
 [javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [react-url]: https://reactjs.org/
 [next.js-url]: https://nextjs.org/
-[tailwindCss-url]: https://tailwindcss.com/
+[tailwindcss-url]: https://tailwindcss.com/

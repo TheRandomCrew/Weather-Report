@@ -1,5 +1,5 @@
 .app {
-  @apply sm:h-full md:p-8 sm:overflow-hidden bg-white;
+  @apply sm:h-full md:p-3 sm:overflow-hidden bg-white;
 }
 
 .card {

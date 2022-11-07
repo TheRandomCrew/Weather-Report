@@ -1,5 +1,4 @@
 import { Fragment, useContext } from 'react';
-import Image from 'next/image';
 import { kelvinToOthers } from '../lib/converter';
 import TemperatureUnitContext from '../context/TemperatureUnit';
 import styles from '../styles/MainInfo.module.css';
@@ -39,7 +38,7 @@ const MainInfo = ({ data }) => {
             </h1>
           )}
           <p className={styles.icon}>
-            <Image src={iconUrl} alt={`${description} icon`} />
+            <img src={iconUrl} alt={`${description} icon`} />
             {description
               .toUpperCase()
               .split(' ')
