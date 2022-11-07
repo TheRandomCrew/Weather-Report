@@ -1,6 +1,7 @@
 import { Fragment, useContext } from 'react';
 import { kelvinToOthers } from '../lib/converter';
 import TemperatureUnitContext from '../context/TemperatureUnit';
+import TemperatureSwitch from './TemperatureSwitch';
 import styles from '../styles/MainInfo.module.css';
 
 const MainInfo = ({ data }) => {
@@ -37,6 +38,8 @@ const MainInfo = ({ data }) => {
               <span className={styles.tempUnit}>°F</span>
             </h1>
           )}
+          <br />
+          <TemperatureSwitch />
           <p className={styles.icon}>
             <img src={iconUrl} alt={`${description} icon`} />
             {description
