@@ -22,6 +22,11 @@ const SearchInput = ({ onSearch }) => {
     displayField: 'displayName',
   };
 
+  const onSelectCity = (city) => {
+    setQueryCityId(city.id);
+    onSearch(city.id);
+  };
+
   return (
     <div className="lg:px-36 md:px-16 px-5">
       <div className="relative">
@@ -36,7 +41,7 @@ const SearchInput = ({ onSearch }) => {
           placeholder="Enter city or region"
           typeahead={false}
           styles={styles}
-          onSelect={(event) => event?.id && setQueryCityId(event.id)}
+          onSelect={(event) => event?.id && onSelectCity(event)}
           onEnter={() => onSearch(queryCityId)}
         />
         <button
