@@ -1,7 +1,6 @@
 import React from 'react';
 import { timestampToTime } from '../lib/converter';
 import InfoItem from './InfoItem';
-import TemperatureSwitch from './TemperatureSwitch';
 import styles from '../styles/Sidebar.module.css';
 
 const Sidebar = ({ data }) => (
@@ -17,7 +16,6 @@ const Sidebar = ({ data }) => (
     <InfoItem name="Humidity" value={`${data?.main?.humidity}%`} />
     <InfoItem name="Latitude" value={`${data?.coord?.lat}°`} />
     <InfoItem name="Longitude" value={`${data?.coord?.lon}°`} />
-    <TemperatureSwitch />
   </>
 );
 
