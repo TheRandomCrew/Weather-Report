@@ -35,6 +35,10 @@
     @apply text-center text-xl;
 }
 
+.leftContent {
+    @apply flex flex-col sm:items-start;
+}
+
 .rightContent {
     @apply flex flex-col sm:items-end;
 }

@@ -12,7 +12,41 @@ const MainInfo = ({ data }) => {
   return (
     <>
       <div className={styles.container}>
-        <div>
+        <div className={styles.leftContent}>
+          <h1 className={styles.city}>{data?.name}</h1>
+          <h1 className={styles.country}>{data?.sys?.country}</h1>
+          <p className={styles.icon}>
+            <img src={iconUrl} alt={`${description} icon`} />
+            {description
+              .toUpperCase()
+              .split(' ')
+              .map((part, i) => (
+                <Fragment key={i}>
+                  {part}
+                  <br />
+                </Fragment>
+              ))}
+          </p>
+          <div className="flex">
+            <div className="my-6">
+              <p className="font-light md:text-3xl text-2xl leading-6">
+                Latitude
+              </p>
+              <p className="font-medium md:text-3xl text-2xl">
+                {data?.coord?.lat}
+              </p>
+            </div>
+            <div className="my-6 ml-4">
+              <p className="font-light md:text-3xl text-2xl leading-6">
+                Longitude
+              </p>
+              <p className="font-medium md:text-3xl text-2xl">
+                {data?.coord?.lon}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.rightContent}>
           {isCelsius ? (
             <h1 className={styles.temperature}>
               {kelvinToOthers(temp).celsius}
@@ -40,22 +74,6 @@ const MainInfo = ({ data }) => {
           )}
           <br />
           <TemperatureSwitch />
-          <p className={styles.icon}>
-            <img src={iconUrl} alt={`${description} icon`} />
-            {description
-              .toUpperCase()
-              .split(' ')
-              .map((part, i) => (
-                <Fragment key={i}>
-                  {part}
-                  <br />
-                </Fragment>
-              ))}
-          </p>
-        </div>
-        <div className={styles.rightContent}>
-          <h1 className={styles.city}>{data?.name}</h1>
-          <h1 className={styles.country}>{data?.sys?.country}</h1>
         </div>
       </div>
     </>
