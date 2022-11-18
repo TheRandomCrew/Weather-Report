@@ -4,7 +4,7 @@
 }
 
 .city {
-    @apply md:text-5xl text-4xl font-medium;
+    @apply md:text-5xl text-4xl font-medium mt-10 sm:mt-0;
 }
 
 .country {
