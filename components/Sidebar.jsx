@@ -14,8 +14,6 @@ const Sidebar = ({ data }) => (
     <InfoItem name="Sunrise" value={timestampToTime(data?.sys?.sunrise)} />
     <InfoItem name="Sunset" value={timestampToTime(data?.sys?.sunset)} />
     <InfoItem name="Humidity" value={`${data?.main?.humidity}%`} />
-    <InfoItem name="Latitude" value={`${data?.coord?.lat}°`} />
-    <InfoItem name="Longitude" value={`${data?.coord?.lon}°`} />
   </>
 );
 

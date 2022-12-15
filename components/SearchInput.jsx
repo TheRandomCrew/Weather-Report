@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Turnstone from 'turnstone';
 import cityList from '../data/cityList.json';
 
@@ -12,6 +12,12 @@ const styles = {
 
 const SearchInput = ({ onSearch }) => {
   const [queryCityId, setQueryCityId] = useState(null);
+
+  useEffect(() => {
+    if (queryCityId) {
+      onSearch(queryCityId);
+    }
+  }, [queryCityId]);
 
   const listbox = {
     data: cityList.map((city) => ({
