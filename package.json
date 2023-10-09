@@ -57,6 +57,6 @@
     "eslint": "8.24.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-next": "12.3.1",
-    "postcss": "~8.4.17"
+    "postcss": "~8.4.31"
   }
 }
